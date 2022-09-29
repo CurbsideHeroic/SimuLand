@@ -1,6 +1,6 @@
 # AAD Hybrid Identity: AD FS Environment 
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FCurbsideHeroic%2FSimuLand%2Fmain%2Fdocs%2Fenvironments%2FaadHybridIdentityADFS%2Fazuredeploy.json?target=_blank)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/?target=_blank#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FCurbsideHeroic%2FSimuLand%2Fmain%2Fdocs%2Fenvironments%2FaadHybridIdentityADFS%2Fazuredeploy.json)
 [![Deploy to Azure Gov](https://aka.ms/deploytoazuregovbutton)](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FCurbsideHeroic%2FSimuLand%2Fmain%2Fdocs%2Fenvironments%2FaadHybridIdentityADFS%2Fazuredeploy.json?target=_blank)
 
 This environment was designed to replicate an on-prem Active Directory (AD) network synced with Azure AD to authenticate to the cloud with the same identity used on-prem. The authentication method used in this environment is federation with Active Directory Services (AD FS).
