@@ -280,7 +280,7 @@
         }
     },
     "variables": {
-        "artifactsBlacksmith": "https://raw.githubusercontent.com/OTRF/Blacksmith/master/",
+        "artifactsBlacksmith": "https://raw.githubusercontent.com/CurbsideHeroic/Blacksmith/master/",
         "artifactsMSSentinel2Go": "https://raw.githubusercontent.com/OTRF/Microsoft-Sentinel2Go/master/",
         "artifactsSimuLand": "https://raw.githubusercontent.com/Azure/SimuLand/main/",
         "aadDiagnosticSettingName": "[concat('AADConnector-',uniqueString(parameters('subscriptionId'),parameters('resourceGroup'),parameters('utcValue')))]",
@@ -597,79 +597,6 @@
                 "mode": "Incremental",
                 "templateLink": {
                     "uri": "[uri(variables('artifactsBlacksmith'), 'templates/azure/Win10-AD-ADFS/azuredeploy.json')]",
-                    "contentVersion": "1.0.0.0"
-                },
-                "parameters": {
-                    "adminUsername": {
-                        "value": "[parameters('adminUsername')]"
-                    },
-                    "adminPassword": {
-                        "value": "[parameters('adminPassword')]"
-                    },
-                    "adfsUsername": {
-                        "value": "[parameters('adfsUsername')]"
-                    },
-                    "adfsPassword": {
-                        "value": "[parameters('adfsPassword')]"
-                    },
-                    "domainUsers": {
-                        "value": "[parameters('domainUsers')]"
-                    },
-                    "numberOfWorkstations": {
-                        "value": "[parameters('numberOfWorkstations')]"
-                    },
-                    "vmNamePrefix": {
-                        "value": "[parameters('vmNamePrefix')]"
-                    },
-                    "windowsDesktopSKU": {
-                        "value": "[parameters('windowsDesktopSKU')]"
-                    },
-                    "windowsServerSKU": {
-                        "value": "[parameters('windowsServerSKU')]"
-                    },
-                    "vmSize": {
-                        "value": "[parameters('vmSize')]"
-                    },
-                    "domainFQDN": {
-                        "value": "[parameters('domainFQDN')]"
-                    },
-                    "remoteAccessMode": {
-                        "value": "[parameters('remoteAccessMode')]"
-                    },
-                    "allowedIPAddresses": {
-                        "value": "[parameters('allowedIPAddresses')]"
-                    },
-                    "enableSysmon": {
-                        "value": true
-                    },
-                    "enableAADConnect": {
-                        "value": true
-                    },
-                    "pfxCertName": {
-                        "value": "[parameters('pfxCertName')]"
-                    },
-                    "pfxCertPassword": {
-                        "value": "[parameters('pfxCertPassword')]"
-                    },
-                    "certificateType": {
-                        "value": "TrustedSigned"
-                    },
-                    "_pfxCertBlobSasUrl": {
-                        "value": "[parameters('_pfxCertBlobSasUrl')]"
-                    }
-                }
-            }
-        },
-        {
-            "name": "deployWinServer",
-            "type": "Microsoft.Resources/deployments",
-            "apiVersion": "2021-04-01",
-            "resourceGroup": "[parameters('resourceGroup')]",
-            "subscriptionId": "[parameters('subscriptionId')]",
-            "properties": {
-                "mode": "Incremental",
-                "templateLink": {
-                    "uri": "[uri(variables('artifactsBlacksmith'), 'templates/azure/Win-Server/azuredeploy.json')]",
                     "contentVersion": "1.0.0.0"
                 },
                 "parameters": {
